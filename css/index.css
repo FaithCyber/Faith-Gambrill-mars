@@ -1,0 +1,62 @@
+/* 1. Page Body & Default Text */
+body {
+    background-color: #13df9b; /* Soft light grey/green */
+    color: #d88787;            /* Dark grey for readability */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* 2. Headings */
+h1, h2, h3 {
+    color: #073664;
+    font-weight: 700;
+}
+
+/* 3. Your Name (Top of Page) */
+header h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #d2e622; /* A bold accent color */
+    text-align: center;
+    border-bottom: 4px solid #e67e22;
+    display: inline-block;
+}
+
+/* 4. Section Spacing & Alignment */
+section {
+    padding: 40px 20px;
+    margin-bottom: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto; /* Centers the sections */
+}
+
+/* 5. Experience List Items (Styled Blocks) */
+/* Assuming your list items are inside a class or section named experience */
+.experience-list li {
+    list-style: none;
+    background: rgb(255, 255, 255);
+    margin: 10px 0;
+    padding: 20px;
+    border-left: 5px solid #3498db;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+}
+
+/* 6. Connect Links */
+.connect-links a {
+    text-decoration: none;
+    color: #3498db;
+    font-weight: bold;
+    padding: 10px 15px;
+    border: 2px solid #750331;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.connect-links a:hover {
+    background-color: #34dba3;
+}
