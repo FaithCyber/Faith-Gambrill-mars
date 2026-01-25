@@ -1,10 +1,18 @@
 body {
+<<<<<<< HEAD
+=======
+    background-color: #13df9b; /* Soft light grey/green */
+    color: #d88787;            /* Dark grey for readability */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+>>>>>>> 3775e56d20dbe87933e8601216a81076ba4efd80
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #e9f7f3;
     color: #333;
 }
 
+<<<<<<< HEAD
 
 /* ===== NAVIGATION ===== */
 header {
@@ -21,6 +29,23 @@ header {
     margin: 0;
     padding: 15px;
     gap: 25px;
+=======
+/* 2. Headings */
+h1, h2, h3 {
+    color: #073664;
+    font-weight: 700;
+}
+
+/* 3. Your Name (Top of Page) */
+header h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #d2e622; /* A bold accent color */
+    text-align: center;
+    border-bottom: 4px solid #e67e22;
+    display: inline-block;
+>>>>>>> 3775e56d20dbe87933e8601216a81076ba4efd80
 }
 
 .nav-links a {
@@ -35,6 +60,7 @@ header {
 
 /* ===== SECTIONS ===== */
 section {
+<<<<<<< HEAD
     max-width: 900px;
     margin: 40px auto;
     padding: 20px;
@@ -79,6 +105,28 @@ h2 {
     gap: 20px;
 }
 
+=======
+    padding: 40px 20px;
+    margin-bottom: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto; /* Centers the sections */
+}
+
+/* 5. Experience List Items (Styled Blocks) */
+/* Assuming your list items are inside a class or section named experience */
+.experience-list li {
+    list-style: none;
+    background: rgb(255, 255, 255);
+    margin: 10px 0;
+    padding: 20px;
+    border-left: 5px solid #3498db;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+}
+
+/* 6. Connect Links */
+>>>>>>> 3775e56d20dbe87933e8601216a81076ba4efd80
 .connect-links a {
     padding: 10px 20px;
     border: 2px solid #3498db;
@@ -86,10 +134,21 @@ h2 {
     text-decoration: none;
     color: #3498db;
     font-weight: bold;
+<<<<<<< HEAD
+=======
+    padding: 10px 15px;
+    border: 2px solid #750331;
+    border-radius: 20px;
+>>>>>>> 3775e56d20dbe87933e8601216a81076ba4efd80
     transition: all 0.3s ease;
 }
 
 .connect-links a:hover {
+<<<<<<< HEAD
     background-color: #3498db;
     color: white;
 } 
+=======
+    background-color: #34dba3;
+}
+>>>>>>> 3775e56d20dbe87933e8601216a81076ba4efd80
