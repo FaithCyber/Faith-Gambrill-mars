@@ -1,81 +1,95 @@
-/* 1. Page Body & Default Text */
 body {
-    background-color: #e9f7f3; /* softer background for readability */
-    color: #333333;            /* improved contrast */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
     margin: 0;
-    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e9f7f3;
+    color: #333;
 }
 
-/* 2. Headings */
-h1, h2, h3 {
-    color: #073664;
-    font-weight: 700;
-    margin-top: 0;
-}
 
-/* 3. Header / Name Section */
+/* ===== NAVIGATION ===== */
 header {
-    text-align: center;
-    padding: 40px 20px;
+    position: sticky; /* STRETCH GOAL ✅ */
+    top: 0;
+    background: #073664;
+    z-index: 1000;
 }
 
-header h1 {
-    font-size: 3rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #d2e622;
-    border-bottom: 4px solid #e67e22;
-    display: inline-block;
-    padding-bottom: 10px;
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 15px;
+    gap: 25px;
 }
 
-/* 4. Section Spacing & Alignment */
+.nav-links a {
+    color: #915656;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* ===== SECTIONS ===== */
 section {
-    padding: 40px 20px;
-    margin: 0 auto 30px auto;
-    max-width: 800px;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
     background: #ffffff;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.08);
 }
 
-/* 5. Experience List Items */
-.experience-list {
-    padding: 0;
-}
-
-.experience-list li {
-    list-style: none;
-    background: #ffffff;
-    margin: 15px 0;
-    padding: 20px;
-    border-left: 6px solid #3498db;
-    border-radius: 6px;
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
-}
-
-/* 6. Connect Links */
-.connect-links {
+h1 {
     text-align: center;
-    margin-top: 20px;
+    font-size: 3rem;
+}
+
+h2 {
+    color: #073664;
+}
+
+/* ===== EXPERIENCE FLEXBOX ===== */
+.experience-item {
+    margin-bottom: 25px;
+}
+
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.experience-header h3 {
+    margin: 0;
+}
+
+.date {
+    font-weight: bold;
+    color: #555;
+}
+
+/* ===== CONNECT FLEXBOX ===== */
+.connect-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 .connect-links a {
+    padding: 10px 20px;
+    border: 2px solid #3498db;
+    border-radius: 25px;
     text-decoration: none;
     color: #3498db;
     font-weight: bold;
-    padding: 10px 18px;
-    border: 2px solid #3498db;
-    border-radius: 25px;
-    margin: 5px;
-    display: inline-block;
     transition: all 0.3s ease;
 }
 
 .connect-links a:hover {
     background-color: #3498db;
-    color: #ffffff;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-}
+    color: white;
+} 
