@@ -1,49 +1,60 @@
-/* ===== SKILLS SECTION (Mobile) ===== */
-#skills ul {
+/* ================================
+   Mobile-first approach
     list-style: none;
     padding: 0;
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
+    flex-direction: column; /* Mobile */
+    align-items: center;
+    margin: 0;
+    padding: 15px;
+    gap: 15px;
 }
 
-#skills li {
-    background-color: #073664;
-    color: #d2e622;
-    padding: 10px 15px;
-    border-radius: 20px;
+.nav-links a {
+    color: #863e3e;
+    text-decoration: none;
     font-weight: bold;
-    font-size: 0.9rem;
 }
 
-/* ===== FOOTER ===== */
-footer {
-    background-color: #073664;
-    color: white;
+/* ===== HEADINGS ===== */
+h1, h2, h3 {
+    color: #18426d;
+    font-weight: 500;
+}
+
+/* ===== NAME AT TOP ===== */
+header h1 {
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #d2e622;
     text-align: center;
-    padding: 20px;
-    margin-top: 40px;
+    border-bottom: 4px solid #e67e22;
+    display: inline-block;
 }
 
-/* ===== TABLET ===== */
-@media (min-width: 768px) {
-    #skills ul {
-        gap: 20px;
-    }
-
-    #skills li {
-        font-size: 1rem;
-        padding: 12px 20px;
-    }
+/* ===== SECTIONS ===== */
+section {
+    margin: 20px 10px;
+    padding: 15px;
+    background: #916969;
+    border-radius: 8px;
 }
 
-/* ===== DESKTOP ===== */
-@media (min-width: 1024px) {
-    #skills {
-        margin-left: auto;
-        margin-right: auto;
-    }
+/* ===== EXPERIENCE ===== */
+.experience-header {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
-    
+/* ===== CONNECT LINKS ===== */
+.connect-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+/* ================================
+   TABLET STYLES
