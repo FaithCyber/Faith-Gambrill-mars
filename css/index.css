@@ -7,7 +7,7 @@ body {
 
 /* ===== NAVIGATION ===== */
 header {
-    position: sticky; /* STRETCH GOAL ✅ */
+    position: sticky;
     top: 0;
     background: #073664;
     z-index: 1000;
@@ -22,91 +22,50 @@ header {
     gap: 25px;
 }
 
-/* 2. Headings */
-h1, h2, h3 {
-    color: #073664;
-    font-weight: 500;
-}
-
-/* 3. Your Name (Top of Page) */
-header h1 {
-    font-size: 3rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #d2e622; /* A bold accent color */
-    text-align: center;
-    border-bottom: 4px solid #e67e22;
-    display: inline-block;          
-
-}
-
 .nav-links a {
-    color: #863e3e;
+    color: #ffffff; /* Changed for better contrast against dark blue */
     text-decoration: none;
     font-weight: bold;
 }
 
-.nav-links a:hover {
-    text-decoration: underline;
-}
-
-/* ===== SECTIONS ===== */
-section {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 20px;
-    background: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-}
-
-h1 {
-    text-align: center;
-    font-size: 3rem;
-}
-
-h2 {
-    color: #073664;
-}
-
-/* ===== EXPERIENCE FLEXBOX ===== */
-.experience-item {
-    margin-bottom: 25px;
-}
-
-.experience-header {
+/* ===== SKILLS FLEXBOX ===== */
+#Skills ul {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.experience-header h3 {
-    margin: 0;
-}
-
-.date {
-    font-weight: bold;
-    color: #555;
-}
-
-/* ===== CONNECT FLEXBOX ===== */
-.connect-links {
-    display: flex;
+    flex-wrap: wrap;       /* Requirement: Use flexbox/grid */
     justify-content: center;
-    gap: 20px;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
 }
 
-.connect-links a {
+#Skills li {
+    background-color: #073664;
+    color: #d2e622;
     padding: 10px 20px;
-    border: 2px solid #3498db;
-    border-radius: 25px;
-    text-decoration: none;
-    color: #3498db;
+    border-radius: 5px;
     font-weight: bold;
-    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.connect-links a:hover {
-    background-color: #3498db;
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #073664;
     color: white;
+    margin-top: 40px;
+}
+
+/* ===== MEDIA QUERIES ===== */
+@media (max-width: 600px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .experience-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
