@@ -1,60 +1,86 @@
-/* ================================
-   Mobile-first approach
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-direction: column; /* Mobile */
-    align-items: center;
+/******************************
+ * GENERAL STYLES & LAYOUT
+ ******************************/
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
     margin: 0;
-    padding: 15px;
-    gap: 15px;
+    padding: 0;
+    background-color: #f4f7f6;
 }
 
-.nav-links a {
-    color: #863e3e;
+header {
+    background: #2c3e50;
+    color: #fff;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
     text-decoration: none;
     font-weight: bold;
 }
 
-/* ===== HEADINGS ===== */
-h1, h2, h3 {
-    color: #18426d;
-    font-weight: 500;
+nav ul li a:hover {
+    color: #3498db;
 }
 
-/* ===== NAME AT TOP ===== */
-header h1 {
-    font-size: 2.2rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #d2e622;
-    text-align: center;
-    border-bottom: 4px solid #e67e22;
-    display: inline-block;
-}
-
-/* ===== SECTIONS ===== */
 section {
-    margin: 20px 10px;
-    padding: 15px;
-    background: #916969;
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    border-bottom: 1px solid #ddd;
+}
+
+h1, h2 {
+    color: #2c3e50;
+}
+
+/******************************
+ * MESSAGE FORM STYLING
+ ******************************/
+#leave-message-section {
+    background: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
     border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
-/* ===== EXPERIENCE ===== */
-.experience-header {
+/* Flexbox layout for the form */
+form[name="leave_message"] {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 15px;
 }
 
-/* ===== CONNECT LINKS ===== */
-.connect-links {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
+form[name="leave_message"] label {
+    font-weight: 600;
+    margin-bottom: -10px;
 }
 
-/* ================================
-   TABLET STYLES
+/* Inputs and Textarea styling */
+form[name="leave_message"] input,
+form[name="leave_message"] textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box; /* Crucial for padding */
+}
