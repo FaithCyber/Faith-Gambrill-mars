@@ -83,4 +83,64 @@ form[name="leave_message"] textarea {
     font-size: 1rem;
     width: 100%;
     box-sizing: border-box; /* Crucial for padding */
+
+}/******************************
+ * PROJECTS (REPO LIST) STYLING
+ ******************************/
+
+/* Targets the Projects section and its list */
+#Projects ul {
+    list-style: none;          /* remove bullets */
+    padding: 0;
+    margin: 20px 0 0;
+    display: grid;
+    grid-template-columns: 1fr; /* default: single column */
+    gap: 12px;
 }
+
+/* Each repo <li> becomes a “card” */
+#Projects ul li {
+    background: #ffffff;
+    border: 1px solid #fae8e8;
+    border-radius: 10px;
+    padding: 14px 16px;
+    box-shadow: 0 2px 10px rgba(26, 22, 22, 0.06);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+/* Hover interaction */
+#Projects ul li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.10);
+}
+
+
+#Projects ul li a {
+    color: #1f2b36;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#Projects ul li a:hover {
+    color: #52ace7;
+    text-decoration: underline;
+}
+
+/******************************
+ * MEDIA QUERIES (RESPONSIVE)
+ ******************************/
+
+/* On wider screens, show 2 columns */
+@media (min-width: 600px) {
+    #Projects ul {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* On very wide screens, 
+@media (min-width: 900px) {
+    #Projects ul {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+    
