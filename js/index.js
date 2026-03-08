@@ -30,7 +30,10 @@ for (let i = 0; i < skills.length; i++) {
   const skill = document.createElement("li");
   skill.innerText = skills[i];
   skillsList.appendChild(skill);
-* MESSAGE FORM HANDLING
+} // <-- close the for loop here
+
+  
+/* MESSAGE FORM HANDLING
  ******************************/
 const messageForm = document.querySelector('form[name="leave_message"]');
 
