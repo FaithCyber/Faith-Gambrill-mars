@@ -1,27 +1,27 @@
 body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #e9f7f3;
-    color: #333;
+    background-color: #48b9b9;
+    color: #6d1134;
 }
 
 /* ===== NAVIGATION ===== */
 header {
     position: sticky;
     top: 0;
-    background: #073664;
+    background: #4a95e0;
     z-index: 1000;
 }
 
 .nav-links {
     list-style: none;
     padding: 0;
-    background-color: #f4f7f6;
+    background-color: #1fb381;
 }
 
 header {
-    background: #2c3e50;
-    color: #fff;
+    background: #365c81;
+    color: #0a319c;
     padding: 1rem 0;
     position: sticky;
     top: 0;
